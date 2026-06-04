@@ -1,0 +1,277 @@
+{
+  "dataset": "eval/dataset.json",
+  "configs": [
+    "A3_bm25_default",
+    "C1_default_topk",
+    "C2_large_topk",
+    "C3_large_bm25_topk",
+    "B1_rrf_k10",
+    "B2_rrf_k30",
+    "B3_rrf_k60",
+    "C4_top_n5",
+    "C5_top_n1"
+  ],
+  "results": [
+    {
+      "name": "A3_bm25_default",
+      "label": "BM25 only (vector_top_k=5, bm25_top_k=5, k=60, n=3)",
+      "config": {
+        "name": "A3_bm25_default",
+        "label": "BM25 only (vector_top_k=5, bm25_top_k=5, k=60, n=3)",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "f1@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333,
+        "f1@3": 0.5,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "f1@5": 0.3333,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "n_queries": 100,
+        "elapsed": 34.01
+      }
+    },
+    {
+      "name": "C1_default_topk",
+      "label": "Default top_k (5,5)",
+      "config": {
+        "name": "C1_default_topk",
+        "label": "Default top_k (5,5)",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "f1@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333,
+        "f1@3": 0.5,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "f1@5": 0.3333,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "n_queries": 100,
+        "elapsed": 33.86
+      }
+    },
+    {
+      "name": "C2_large_topk",
+      "label": "Large top_k (10,10)",
+      "config": {
+        "name": "C2_large_topk",
+        "label": "Large top_k (10,10)",
+        "vector_search_top_k": 10,
+        "bm25_search_top_k": 10,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "f1@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333,
+        "f1@3": 0.5,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "f1@5": 0.3333,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "n_queries": 100,
+        "elapsed": 34.83
+      }
+    },
+    {
+      "name": "C3_large_bm25_topk",
+      "label": "Large BM25 top_k (5,20)",
+      "config": {
+        "name": "C3_large_bm25_topk",
+        "label": "Large BM25 top_k (5,20)",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 20,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "f1@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333,
+        "f1@3": 0.5,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "f1@5": 0.3333,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "n_queries": 100,
+        "elapsed": 33.53
+      }
+    },
+    {
+      "name": "B1_rrf_k10",
+      "label": "RRF k=10",
+      "config": {
+        "name": "B1_rrf_k10",
+        "label": "RRF k=10",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 10,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "f1@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333,
+        "f1@3": 0.5,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "f1@5": 0.3333,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "n_queries": 100,
+        "elapsed": 32.99
+      }
+    },
+    {
+      "name": "B2_rrf_k30",
+      "label": "RRF k=30",
+      "config": {
+        "name": "B2_rrf_k30",
+        "label": "RRF k=30",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 30,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "f1@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333,
+        "f1@3": 0.5,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "f1@5": 0.3333,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "n_queries": 100,
+        "elapsed": 33.33
+      }
+    },
+    {
+      "name": "B3_rrf_k60",
+      "label": "RRF k=60 (default)",
+      "config": {
+        "name": "B3_rrf_k60",
+        "label": "RRF k=60 (default)",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "f1@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333,
+        "f1@3": 0.5,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "f1@5": 0.3333,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "n_queries": 100,
+        "elapsed": 33.06
+      }
+    },
+    {
+      "name": "C4_top_n5",
+      "label": "final_top_n=5",
+      "config": {
+        "name": "C4_top_n5",
+        "label": "final_top_n=5",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 5
+      },
+      "metrics": {
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "f1@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333,
+        "f1@3": 0.5,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "f1@5": 0.3333,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "n_queries": 100,
+        "elapsed": 33.84
+      }
+    },
+    {
+      "name": "C5_top_n1",
+      "label": "final_top_n=1",
+      "config": {
+        "name": "C5_top_n1",
+        "label": "final_top_n=1",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 1
+      },
+      "metrics": {
+        "recall@1": 1.0,
+        "precision@1": 1.0,
+        "f1@1": 1.0,
+        "ndcg@1": 1.0,
+        "recall@3": 1.0,
+        "precision@3": 0.3333,
+        "f1@3": 0.5,
+        "ndcg@3": 1.0,
+        "recall@5": 1.0,
+        "precision@5": 0.2,
+        "f1@5": 0.3333,
+        "ndcg@5": 1.0,
+        "mrr": 1.0,
+        "n_queries": 100,
+        "elapsed": 33.23
+      }
+    }
+  ]
+}

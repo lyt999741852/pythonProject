@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibe-cooking"
+version = "0.1.0"
+description = "Vibe Cooking — AI-powered smart cooking assistant"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "jieba>=0.42.1",
+    "python-dotenv>=1.0.0",
+    "httpx>=0.27.0",
+    "chromadb>=0.5.0",
+    "rank-bm25>=0.2.2",
+    "langchain>=0.3.0",
+    "langchain-chroma>=0.2.0",
+    "langchain-community>=0.3.0",
+    "langchain-openai>=0.3.0",
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.27.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]

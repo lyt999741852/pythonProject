@@ -1,0 +1,277 @@
+{
+  "dataset": "E:\\rah\\pythonProject\\backend\\eval\\dataset.json",
+  "configs": [
+    "A3_bm25_default",
+    "C1_default_topk",
+    "C2_large_topk",
+    "C3_large_bm25_topk",
+    "B1_rrf_k10",
+    "B2_rrf_k30",
+    "B3_rrf_k60",
+    "C4_top_n5",
+    "C5_top_n1"
+  ],
+  "results": [
+    {
+      "name": "A3_bm25_default",
+      "label": "BM25 only (vector_top_k=5, bm25_top_k=5, k=60, n=3)",
+      "config": {
+        "name": "A3_bm25_default",
+        "label": "BM25 only (vector_top_k=5, bm25_top_k=5, k=60, n=3)",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 0.76,
+        "precision@1": 0.76,
+        "f1@1": 0.76,
+        "ndcg@1": 0.76,
+        "recall@3": 0.96,
+        "precision@3": 0.32,
+        "f1@3": 0.48,
+        "ndcg@3": 0.8796,
+        "recall@5": 0.96,
+        "precision@5": 0.192,
+        "f1@5": 0.32,
+        "ndcg@5": 0.8796,
+        "mrr": 0.8517,
+        "n_queries": 100,
+        "elapsed": 22.97
+      }
+    },
+    {
+      "name": "C1_default_topk",
+      "label": "Default top_k (5,5)",
+      "config": {
+        "name": "C1_default_topk",
+        "label": "Default top_k (5,5)",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 0.76,
+        "precision@1": 0.76,
+        "f1@1": 0.76,
+        "ndcg@1": 0.76,
+        "recall@3": 0.96,
+        "precision@3": 0.32,
+        "f1@3": 0.48,
+        "ndcg@3": 0.8796,
+        "recall@5": 0.96,
+        "precision@5": 0.192,
+        "f1@5": 0.32,
+        "ndcg@5": 0.8796,
+        "mrr": 0.8517,
+        "n_queries": 100,
+        "elapsed": 23.53
+      }
+    },
+    {
+      "name": "C2_large_topk",
+      "label": "Large top_k (10,10)",
+      "config": {
+        "name": "C2_large_topk",
+        "label": "Large top_k (10,10)",
+        "vector_search_top_k": 10,
+        "bm25_search_top_k": 10,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 0.76,
+        "precision@1": 0.76,
+        "f1@1": 0.76,
+        "ndcg@1": 0.76,
+        "recall@3": 0.96,
+        "precision@3": 0.32,
+        "f1@3": 0.48,
+        "ndcg@3": 0.8796,
+        "recall@5": 0.96,
+        "precision@5": 0.192,
+        "f1@5": 0.32,
+        "ndcg@5": 0.8796,
+        "mrr": 0.8517,
+        "n_queries": 100,
+        "elapsed": 22.64
+      }
+    },
+    {
+      "name": "C3_large_bm25_topk",
+      "label": "Large BM25 top_k (5,20)",
+      "config": {
+        "name": "C3_large_bm25_topk",
+        "label": "Large BM25 top_k (5,20)",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 20,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 0.76,
+        "precision@1": 0.76,
+        "f1@1": 0.76,
+        "ndcg@1": 0.76,
+        "recall@3": 0.96,
+        "precision@3": 0.32,
+        "f1@3": 0.48,
+        "ndcg@3": 0.8796,
+        "recall@5": 0.96,
+        "precision@5": 0.192,
+        "f1@5": 0.32,
+        "ndcg@5": 0.8796,
+        "mrr": 0.8517,
+        "n_queries": 100,
+        "elapsed": 23.78
+      }
+    },
+    {
+      "name": "B1_rrf_k10",
+      "label": "RRF k=10",
+      "config": {
+        "name": "B1_rrf_k10",
+        "label": "RRF k=10",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 10,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 0.76,
+        "precision@1": 0.76,
+        "f1@1": 0.76,
+        "ndcg@1": 0.76,
+        "recall@3": 0.96,
+        "precision@3": 0.32,
+        "f1@3": 0.48,
+        "ndcg@3": 0.8796,
+        "recall@5": 0.96,
+        "precision@5": 0.192,
+        "f1@5": 0.32,
+        "ndcg@5": 0.8796,
+        "mrr": 0.8517,
+        "n_queries": 100,
+        "elapsed": 23.08
+      }
+    },
+    {
+      "name": "B2_rrf_k30",
+      "label": "RRF k=30",
+      "config": {
+        "name": "B2_rrf_k30",
+        "label": "RRF k=30",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 30,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 0.76,
+        "precision@1": 0.76,
+        "f1@1": 0.76,
+        "ndcg@1": 0.76,
+        "recall@3": 0.96,
+        "precision@3": 0.32,
+        "f1@3": 0.48,
+        "ndcg@3": 0.8796,
+        "recall@5": 0.96,
+        "precision@5": 0.192,
+        "f1@5": 0.32,
+        "ndcg@5": 0.8796,
+        "mrr": 0.8517,
+        "n_queries": 100,
+        "elapsed": 23.49
+      }
+    },
+    {
+      "name": "B3_rrf_k60",
+      "label": "RRF k=60 (default)",
+      "config": {
+        "name": "B3_rrf_k60",
+        "label": "RRF k=60 (default)",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 3
+      },
+      "metrics": {
+        "recall@1": 0.76,
+        "precision@1": 0.76,
+        "f1@1": 0.76,
+        "ndcg@1": 0.76,
+        "recall@3": 0.96,
+        "precision@3": 0.32,
+        "f1@3": 0.48,
+        "ndcg@3": 0.8796,
+        "recall@5": 0.96,
+        "precision@5": 0.192,
+        "f1@5": 0.32,
+        "ndcg@5": 0.8796,
+        "mrr": 0.8517,
+        "n_queries": 100,
+        "elapsed": 22.93
+      }
+    },
+    {
+      "name": "C4_top_n5",
+      "label": "final_top_n=5",
+      "config": {
+        "name": "C4_top_n5",
+        "label": "final_top_n=5",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 5
+      },
+      "metrics": {
+        "recall@1": 0.76,
+        "precision@1": 0.76,
+        "f1@1": 0.76,
+        "ndcg@1": 0.76,
+        "recall@3": 0.96,
+        "precision@3": 0.32,
+        "f1@3": 0.48,
+        "ndcg@3": 0.8796,
+        "recall@5": 0.99,
+        "precision@5": 0.198,
+        "f1@5": 0.33,
+        "ndcg@5": 0.8921,
+        "mrr": 0.8587,
+        "n_queries": 100,
+        "elapsed": 22.52
+      }
+    },
+    {
+      "name": "C5_top_n1",
+      "label": "final_top_n=1",
+      "config": {
+        "name": "C5_top_n1",
+        "label": "final_top_n=1",
+        "vector_search_top_k": 5,
+        "bm25_search_top_k": 5,
+        "rrf_k_constant": 60,
+        "final_top_n": 1
+      },
+      "metrics": {
+        "recall@1": 0.76,
+        "precision@1": 0.76,
+        "f1@1": 0.76,
+        "ndcg@1": 0.76,
+        "recall@3": 0.76,
+        "precision@3": 0.2533,
+        "f1@3": 0.38,
+        "ndcg@3": 0.76,
+        "recall@5": 0.76,
+        "precision@5": 0.152,
+        "f1@5": 0.2533,
+        "ndcg@5": 0.76,
+        "mrr": 0.76,
+        "n_queries": 100,
+        "elapsed": 22.15
+      }
+    }
+  ]
+}
